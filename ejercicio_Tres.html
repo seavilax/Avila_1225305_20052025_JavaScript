@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Días Vividos</title>
+</head>
+<body>
+  <h1 id="mensaje-bienvenida"></h1>
+  <p id="mensaje-dias"></p>
+
+  <script>
+    // Solicitar datos al usuario
+    const nombre = prompt("Ingrese su nombre:");
+    const apellido = prompt("Ingrese su apellido:");
+    const fechaNacimiento = prompt("Ingrese su fecha de nacimiento (formato AAAA/MM/DD):");
+
+    // Mostrar mensaje de bienvenida
+    document.getElementById("mensaje-bienvenida").textContent =
+      `¡Hola, ${nombre} ${apellido}!`;
+
+    // Calcular días vividos
+    const hoy = new Date();
+    const nacimiento = new Date(fechaNacimiento);
+    const diferencia = hoy - nacimiento;
+    const diasVividos = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+    // Mostrar días vividos
+    document.getElementById("mensaje-dias").textContent =
+      `Has vivido aproximadamente ${diasVividos} días.`;
+  </script>
+</body>
+</html>
+

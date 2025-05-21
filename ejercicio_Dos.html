@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso de datos</title>
+</head>
+<body>
+  <h1 id="mensaje-bienvenida"></h1>
+
+  <script>
+    // Solicitar datos al user
+    const nombre = prompt("Ingrese su nombre:");
+    const apellido = prompt("Ingrese su apellido:");
+    const edad = prompt("Ingrese su edad:");
+
+    // Mostrar mensaje de bienvenida
+    document.getElementById("mensaje-bienvenida").textContent =
+      `¡Hola, ${nombre} ${apellido}! Tienes ${edad} años.`;
+  </script>
+</body>
+</html>
