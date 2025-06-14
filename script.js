@@ -1,8 +1,8 @@
 // Variables con datos personales al azar
 const datosAleatorios = {
-    nombre: "Juan Pérez",
-    edad: 25,
-    fechaNacimiento: "1998-05-15"
+    nombre: "Sebas Avila",
+    edad: 24,
+    fechaNacimiento: "2001-03-10"
 };
 
 // Función para calcular días vividos
